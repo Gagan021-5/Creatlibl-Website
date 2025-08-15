@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background: conic-gradient(
+  at bottom right,
+  #0e814b,
+  #0ca5c4,
+  #111827
+);
+
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
