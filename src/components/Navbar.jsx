@@ -1,17 +1,17 @@
 import React from "react";
 import mainlogo from "../assets/creatibl.png";
 import Menubar from "./Menubar";
-import { NavLink } from "react-router";
+
 const Navbar = () => {
   return (
-    <header className="h-20 w-full flex items-center justify-between px-4  shadow-md fixed top-0 left-0 z-50">
+    <header className="h-20 w-full flex items-center justify-between px-4   shadow-md fixed top-0 left-0 z-50">
       <div className="flex items-center cursor-pointer" aria-label="Logo and Brand">
         <img
           src={mainlogo}
           alt="Creatibl Logo"
           className="h-12 object-contain"
         />
-        <h1 className="ml-2 text-white/95 font-semibold text-2xl">
+        <h1 className="ml-2 text-white/90 from- font-semibold text-2xl">
           Creatibl
         </h1>
       </div>

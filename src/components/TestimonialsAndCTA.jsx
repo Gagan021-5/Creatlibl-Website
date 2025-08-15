@@ -4,10 +4,9 @@ import men from "../assets/men.jpeg";
 import woman from "../assets/women.jpeg";
 
 const TestimonialsAndCTA = () => {
-
-  const scrolltotop=()=>{
-    window.scrollTo({top:0,behavior:"smooth"});
-  }
+  const scrolltotop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   const testimonials = [
     {
       quote:
@@ -24,7 +23,7 @@ const TestimonialsAndCTA = () => {
   ];
 
   return (
-    <Animatescroll id="Contact" className="text-white py-16 px-6">
+    <Animatescroll className="text-white py-16 px-6">
       <h2 className="text-4xl font-bold text-center mb-12">
         Client Testimonials
       </h2>
@@ -53,17 +52,6 @@ const TestimonialsAndCTA = () => {
           Whether you need a brand-new website, a powerful app, or a marketing
           push — we’re ready to make it happen.
         </p>
-        <div className="flex flex-col items-center gap-2">
-          <button className="bg-black/20 px-8 py-3 rounded-lg font-semibold transition cursor-pointer hover:bg-black/40">
-            <span className="text-white">
-              Contact us today to get started
-            </span>
-          </button>
-
-          <button onClick={scrolltotop} className="bg-white/10 hover:bg-white/20 cursor-pointer text-white px-4 py-2 rounded-lg backdrop-blur-md border border-white/20 transition-colors duration-300">
-            Scroll to top
-          </button>
-        </div>
       </div>
     </Animatescroll>
   );

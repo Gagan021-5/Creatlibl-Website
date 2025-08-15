@@ -5,6 +5,8 @@ import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
 import HowWeWork from "./components/HowWeWork";
 import TestimonialsAndCTA from "./components/TestimonialsAndCTA";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -15,6 +17,8 @@ function App() {
       <WhyChooseUs />
       <HowWeWork/>
       <TestimonialsAndCTA/>
+      <Contact/>
+      <Footer/>
     </>
   );
 }
