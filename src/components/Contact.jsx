@@ -1,6 +1,6 @@
 import Footer from "./Footer";
 import { useForm } from "react-hook-form";
-
+import Animatescroll from "./Animatescroll";
 const Contact = () => {
   const {
     register,
@@ -31,7 +31,7 @@ const Contact = () => {
 
   return (
     <>
-      <section
+      <Animatescroll
         id="Contact"
         className="min-h-screen w-full flex flex-col justify-center items-center p-6 text-white outline-none"
       >
@@ -113,7 +113,7 @@ const Contact = () => {
           <p className="text-gray-300">Email: creatibl.solutions@gmail.com</p>
           <p className="text-gray-300">Phone: +91 7827847768</p>
         </div>
-      </section>
+      </Animatescroll>
     </>
   );
 };

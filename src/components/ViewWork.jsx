@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-
+import Animatescroll from "./Animatescroll";
 const projectsData = [
   {
     title: "Landing Page Design",
@@ -28,7 +28,7 @@ const projectsData = [
 ];
 const ViewWork = () => {
   return (
-    <section id="projects" className="py-16  min-h-screen w-full">
+    <Animatescroll id="projects" className="py-16  min-h-screen w-full">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold mb-8 text-white">Our Work</h2>
 
@@ -38,7 +38,7 @@ const ViewWork = () => {
           ))}
         </div>
       </div>
-    </section>
+    </Animatescroll>
   );
 };
 
