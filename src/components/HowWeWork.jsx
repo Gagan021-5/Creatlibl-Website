@@ -29,11 +29,11 @@ const HowWeWork = () => {
   return (
     <Animatescroll className="min-h-screen text-white py-16 px-6">
       <h2 className="text-4xl font-bold text-center mb-12">How We Work</h2>
-      <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
         {steps.map((step, idx) => (
           <div
             key={idx}
-            className="bg-gradient-to-tr from-sky-900 to-black/80 cursor-pointer p-6 rounded-xl shadow-lg hover:shadow-2xl transition text-center hover:scale-105 all delay-100 duration-150 ease-in-out"
+            className="bg-gradient-to-tr from-sky-900 to-black/80 cursor-pointer p-6 rounded-xl shadow-lg hover:shadow-2xl transition text-center hover:scale-105 duration-150 ease-in-out"
           >
             {step.logo && (
               <step.logo className="w-10 h-10 mx-auto mb-4 text-sky-800" />

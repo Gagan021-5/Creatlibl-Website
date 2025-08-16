@@ -1,4 +1,3 @@
-
 import Footer from "./Footer";
 import { useForm } from "react-hook-form";
 
@@ -10,7 +9,6 @@ const Contact = () => {
     reset,
   } = useForm();
 
-  
   const formurl = "https://formspree.io/f/meozdngw";
 
   const onSubmit = async (data) => {
@@ -62,7 +60,7 @@ const Contact = () => {
               type="text"
               placeholder="Your name"
               {...register("name", { required: true })}
-              className="w-full p-3 rounded-lg border border-red-100 text-white outline-none"
+              className="w-full p-3 rounded-lg border border-white/50 focus:border-white/90 text-white outline-none"
             />
             {errors.name && (
               <p className="text-red-400 text-sm mt-1">Name is required</p>
@@ -78,7 +76,7 @@ const Contact = () => {
               type="email"
               placeholder="Your email"
               {...register("email", { required: true })}
-              className="w-full p-3 rounded-lg border border-red-100 text-white outline-none"
+              className="w-full p-3 rounded-lg border border-white/50 focus:border-white/90 text-white outline-none"
             />
             {errors.email && (
               <p className="text-red-400 text-sm mt-1">Email is required</p>
@@ -94,7 +92,7 @@ const Contact = () => {
               placeholder="Your message"
               rows="5"
               {...register("message", { required: true })}
-              className="w-full p-3 rounded-lg border border-red-100 text-white outline-none"
+              className="w-full p-3 rounded-lg border border-white/50 focus:border-white/90 text-white outline-none"
             ></textarea>
             {errors.message && (
               <p className="text-red-400 text-sm mt-1">Message is required</p>
@@ -110,13 +108,12 @@ const Contact = () => {
           </button>
         </form>
 
-        <div className="mt-10 text-gray-300 text-sm text-center">
-          <p>Or reach out directly:</p>
-          <p>Email: creatibl.solutions@gmail.com</p>
-          <p>Phone: +91 7827847768</p>
+        <div className="mt-10 max-sm:mb-8  text-sm text-center">
+          <p className="text-white">Or reach out directly:</p>
+          <p className="text-gray-300">Email: creatibl.solutions@gmail.com</p>
+          <p className="text-gray-300">Phone: +91 7827847768</p>
         </div>
       </section>
-  
     </>
   );
 };

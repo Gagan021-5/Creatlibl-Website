@@ -31,7 +31,7 @@ const TestimonialsAndCTA = () => {
         {testimonials.map((t, idx) => (
           <div
             key={idx}
-            className="bg-black/30 p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col items-center text-center"
+            className="bg-black/40 p-6 rounded-xl shadow-lg hover:shadow-2xl  flex flex-col items-center text-center transition hover:scale-105 all delay-100 duration-150 ease-in-out cursor-pointer"
           >
             <img
               src={t.image}
@@ -39,7 +39,7 @@ const TestimonialsAndCTA = () => {
               className="w-20 h-20 rounded-full object-cover mb-4 border-2 border-green-500"
             />
             <p className="text-gray-300 italic mb-4">"{t.quote}"</p>
-            <p className="text-blue-400 font-semibold">– {t.author}</p>
+            <p className="text-emerald-500 font-semibold">– {t.author}</p>
           </div>
         ))}
       </div>

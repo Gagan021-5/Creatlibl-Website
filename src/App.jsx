@@ -7,6 +7,8 @@ import HowWeWork from "./components/HowWeWork";
 import TestimonialsAndCTA from "./components/TestimonialsAndCTA";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Scrolltotop from "./Scrolltotop";
+import ViewWork from "./components/ViewWork";
 function App() {
   return (
     <>
@@ -16,9 +18,12 @@ function App() {
       <Services />
       <WhyChooseUs />
       <HowWeWork/>
+      <ViewWork/>
       <TestimonialsAndCTA/>
       <Contact/>
       <Footer/>
+      <Scrolltotop/>
+      
     </>
   );
 }

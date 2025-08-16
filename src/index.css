@@ -6,10 +6,10 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  background: linear-gradient(to top right, #0c4a6e, rgba(0, 0, 0, 0.8));
-
-
-
+  background: linear-gradient(to bottom,
+      #0c4a6e,
+      #000000,
+      #111827);
 }
 
 html {

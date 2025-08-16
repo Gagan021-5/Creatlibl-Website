@@ -1,71 +1,19 @@
 
-import { motion, useAnimation } from "framer-motion";
 
-const chevronVariants = {
-  normal: {
-    y: 0,
-    opacity: 1,
-  },
-  animate: {
-    y: [-4, 0],
-    opacity: [0.3, 1],
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  },
-};
 
-const ChevronsUp = ({
-  width = 28,
-  height = 28,
-  strokeWidth = 2,
-  stroke = "#ffffff",
-  ...props
-}) => {
-  const controls = useAnimation();
+const Scrolltotop = () => {
+  const handleScroll = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
-    <div
-      style={{
-        cursor: "pointer",
-        userSelect: "none",
-        padding: "8px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-      onMouseEnter={() => controls.start("animate")}
-      onMouseLeave={() => controls.start("normal")}
+    <button
+      onClick={handleScroll}
+      className="fixed bottom-15 cursor-pointer sm:hidden right-1 z-50 px-4 py-2 rounded-lg bg-white/10 text-white backdrop-blur-md hover:bg-white/20 transition-all duration-300 shadow-lg"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={width}
-        height={height}
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke={stroke}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        {...props}
-      >
-        <motion.path
-          d="m17 11-5-5-5 5"
-          variants={chevronVariants}
-          animate={controls}
-          initial="normal"
-        />
-        <motion.path
-          d="m17 18-5-5-5 5"
-          variants={chevronVariants}
-          animate={controls}
-          initial="normal"
-          transition={{ delay: 0.1 }}
-        />
-      </svg>
-    </div>
+      ↑ Top
+    </button>
   );
 };
 
-export { ChevronsUp };
+export default Scrolltotop;
