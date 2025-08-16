@@ -109,7 +109,7 @@ const Contact = () => {
         </form>
 
         <div className="mt-10 max-sm:mb-8  text-sm text-center">
-          <p className="text-white">Or reach out directly:</p>
+          <p className="text-white font-semibold">Or reach out directly:</p>
           <p className="text-gray-300">Email: creatibl.solutions@gmail.com</p>
           <p className="text-gray-300">Phone: +91 7827847768</p>
         </div>
